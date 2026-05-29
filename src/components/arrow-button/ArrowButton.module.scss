@@ -1,0 +1,32 @@
+.container {
+	box-sizing: border-box;
+	position: fixed;
+	top: 31px;
+	left: 0;
+	display: flex;
+	width: 100px;
+	height: 100px;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	background-color: #000;
+	cursor: pointer;
+	transition: transform 0.3s ease-in-out;
+	z-index: 10;
+}
+
+.container_open {
+	transform: translateX(320px);
+}
+
+.arrow {
+	width: 48px;
+	height: 48px;
+	flex-shrink: 0;
+	transform: rotate(180deg);
+	transition: transform 0.3s ease-in-out;
+}
+
+.arrow_open {
+	transform: rotate(0deg);
+}
